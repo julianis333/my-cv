@@ -4,84 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>Моё резюме</title>
 </head>
 <body>
-    <table>
-        <tr>
-            <td>
-                <img src="me-and-fish.jpg" alt="тут я стою с акулочкой!" height="200">
-            </td>
-            <td>
-                <h1>я люля нистратова!</h1>
-                <hr size="2px" noshade color="lightpink">
-                <p>Я рыбник</p>
-                <em>А еще я котик</em>
-            </td>
-        </tr>
-    </table>
-    <hr size="2px" noshade color="lightpink">
-    <h2>Мои соц сети:</h2>
-    <ul type="square">
-        <li><a href="https://instagram.com/julianis333" target="_blank">Моя инста;</a> (простите за экстримизм)</li>
-        <li><a href="https://t.me/julianis333" target="_blank">Мой телеграмчик</a></li>
-    </ul>
-    <hr size="2px" noshade color="lightpink">
-    <h2>Капелюшечку про себя любимую:</h2>
-    <ol type="A">
-        <li>Я милая нахрен</li>
-        <li>Веселая</li>
-        <li>Красивая</li>
-    </ol>
-    <hr size="2px" noshade color="lightpink">
-    <h2>Список моих любимых блогеров на бтубтубчике:</h2>
-    <a href="list-favorite-bloggers.html" target="_blank">Нажимайте все сюда кабанчиком</a>
-    <hr size="2px" noshade color="lightpink">
-    <h2>Сейчас я расскажу свои плюсы и минусы:</h2>
-    <table border="2">
-        <tr>
-            <th>Плюсы</th>
-            <th>Еще плюсы</th>
-            <th>Минусы</th>
-        </tr>
-        <tr>
-            <td>Умею делать красивущие открыточки</td>
-            <td>Озарю бесплатно вас своей улыбкой</td>
-            <td>Иногда громко рыгаю</td>
-        </tr>
-        <tr>
-            <td>Подниму настроение хохотом</td>
-            <td>Поделюсь с вами вкусняшками</td>
-            <td>Засыпаю на фильмчиках</td>
-        </tr>
-    </table>
-    <hr size="2px" noshade color="lightpink">
-    <h2>Связь со мной:</h2>
-    <form action="/">
-        <label for="name">Твое имя:</label>
-        <input type="text" id="name" placeholder="Имя введи уже емае...">
-
-        <br>
-
-        <label for="email">Твой емейл:</label>
-        <input type="email" id="emal" placeholder="Жду твою почту...">
-
-        <br>
-
-        <label for="color">Укажи цвет своей сегодняшней футболки/кофты</label>
-        <input type="color" id="color">
-
-        <br>
-
-        <label for="message">Напиши мне что-то хорошее:</label>
-
-        <br>
-
-        <textarea id="message" rows="3" cols="15"></textarea>
-
-        <br>
-
-        <input type="submit" value="Связаться со мной!">
-    </form>
+    <div class="container">
+        <div class="info">
+            <img src="me-and-fish.jpg" class="avatar" alt="две рыбки">
+            <div class="info-text">
+            <h1 class="main-header">я люля нистратова!</h1>
+            <p class="info-fish">Я рыбник</p>
+            <p class="info-fish">А еще я котик</p>
+            </div>
+        </div>
+        <div class="social">
+            <h2 class="second-header">Мои соц сети:</h2>
+            <ul class="list">
+                <li class="social-items link-list">
+                    <a href="https://instagram.com/julianis333" target="_blank">Моя инста</a> (простите за экстримизм);
+                <li class="social-items link-list">
+                    <a href="https://t.me/julianis333" target="_blank">Мой телеграмчик</a>
+                </li>
+            </ul>
+        </div>
+        <div class="card bg-yellow">
+            <h2 class="second-header">Капелюшечку про себя любимую:</h2>
+            <ol class="list">
+                <li>Я милая нахрен</li>
+                <li>Веселая</li>
+                <li>Красивая</li>
+            </ol>
+            </div>
+        <div class="card bg-green">
+            <h2 class="second-header">Список моих любимых блогеров на бтубтубчике:</h2>
+            <a href="list-favorite-bloggers.html" target="_blank">Нажимайте все сюда кабанчиком</a>
+        </div>
+        <div class="card bg-red">
+            <h2 class="second-header">Сейчас я расскажу свои плюсы и минусы:</h2>
+            <table class="table">
+                <tr>
+                    <th>Плюсы</th>
+                    <th>Еще плюсы</th>
+                    <th>Минусы</th>
+                </tr>
+                <tr>
+                    <td>Умею делать красивущие открыточки</td>
+                    <td>Озарю бесплатно вас своей улыбкой</td>
+                    <td>Иногда громко рыгаю</td>
+                </tr>
+                <tr>
+                    <td>Подниму настроение хохотом</td>
+                    <td>Поделюсь с вами вкусняшками</td>
+                    <td>Засыпаю на фильмчиках</td>
+                </tr>
+            </table>
+        </div>     
+        <div class="contact">  
+            <div class="card">
+                <h2 class="second-header">Связь со мной:</h2>
+                <form action="/">
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="name" class="contact-label">Твое имя:</label>
+                            <input type="text" id="name" placeholder="Имя введи уже емае...">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="contact-label">Твой емейл:</label>
+                            <input type="email" id="emal" placeholder="Жду твою почту...">
+                    </div>
+                        </div>
+                    <div class="form-group">
+                        <label for="message" class="contact-label">Напиши мне что-то хорошее:</label>
+                        <textarea id="message" rows="3" cols="15"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input class="btn" type="submit" class="button" value="Связаться со мной!">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
